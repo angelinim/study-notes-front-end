@@ -1,17 +1,22 @@
 <div class="main-container">
-  <header class="header-7"><div class="branding"><a class="nav-link" href=""><span class="title">StudyNotes</span></a></div></header>
+  <header class="header-6"><div class="branding"><a class="nav-link" href=""><span class="title">StudyNotes</span></a></div></header>
   <div class="content-container">
-    <nav class="sidenav">
-      <section class="sidenav-content">
-              <a class="nav-link">Link 1</a>
-              <a class="nav-link">Link 2</a>
-              <a class="nav-link">Link 3</a>
-      </section>
-    </nav>
-    <div class="content-area">
+    <main id="content" class="content-area">
+      <p>Something for example</p>
       <router-outlet></router-outlet>
-    </div>
-    
+    </main>
+
+    <clr-vertical-nav id="nav" [clrVerticalNavCollapsible]="true" [(clrVerticalNavCollapsed)]="isCollapsed">
+      <a class="nav-link" clrVerticalNavLink routerLink="#" routerLinkActive="active">
+        <clr-icon shape="book" clrVerticalNavIcon></clr-icon> NoteBooks
+      </a>
+      <a class="nav-link" clrVerticalNavLink routerLink="#" routerLinkActive="active">
+        <clr-icon shape="note" clrVerticalNavIcon></clr-icon> New Notes
+      </a>
+      <a class="nav-link" clrVerticalNavLink routerLink="#" routerLinkActive="active">
+        <clr-icon shape="logout" clrVerticalNavIcon></clr-icon> Logout
+      </a>
+    </clr-vertical-nav>
   </div>
 </div>
 

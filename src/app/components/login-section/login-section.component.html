@@ -1,0 +1,22 @@
+<div class="login-wrapper">
+    <form action="" class="login">
+        <section class="title">
+            <h3 class="welcome">Welcome to</h3>
+            Study Notes
+            <h5 class="hint">Log in or Create an Account</h5>
+        </section>
+        <div class="login-group">
+            <clr-input-container>
+                <label class="clr-sr-only">Username</label>
+                <!-- [(ngModel)]="form.username" -->
+                <input type="text" name="username" clrInput placeholder="Username" />
+            </clr-input-container>
+            <clr-password-container>
+                <label class="clr-sr-only">Password</label>
+                <input type="password" name="password" clrPassword placeholder="Password"/>
+            </clr-password-container>
+            <button type="submit" class="btn btn-primary">NEXT</button>
+            <a href="create-account" class="signup">Create Account</a>
+        </div>
+    </form>
+</div>

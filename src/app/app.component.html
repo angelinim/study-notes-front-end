@@ -4,7 +4,9 @@
       <a class="nav-link" href=""><span class="title">StudyNotes</span></a></div>
   </header>
   <div class="content-container">
+    
     <main id="content" class="content-area">
+      <div class="blocker" *ngIf="!isCollapsed && innerWidth < 768" (click)="closeSideBar()"></div>
       <router-outlet></router-outlet> 
     </main>
 

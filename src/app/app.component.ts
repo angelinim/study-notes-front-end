@@ -14,6 +14,14 @@ export class AppComponent implements OnInit {
 
   }
 
+  Collapsed(){
+    console.log(this.isCollapsed);
+  }
+
+  closeSideBar(){
+    this.isCollapsed = true;
+  }
+
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.innerWidth = window.innerWidth;
@@ -25,6 +33,7 @@ export class AppComponent implements OnInit {
       this.isCollapsed = false;
       this.fixSideNav(0);
     }
+    console.log(this.isCollapsed);
   }
 
   fixSideNav(fixed: number){

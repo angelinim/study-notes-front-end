@@ -1,5 +1,20 @@
 clr-vertical-nav{
     height: 100%;
+    z-index: 999;
+}
+
+header{
+    z-index: 999;
+}
+
+.blocker{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.6);
 }
 
 .icon {
